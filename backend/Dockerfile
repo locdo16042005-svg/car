@@ -1,9 +1,10 @@
 FROM maven:3.8.5-eclipse-temurin-17 AS build
 WORKDIR /app
-# Copy file pom.xml và toàn bộ thư mục backend vào /app
+# Copy file pom.xml từ thư mục hiện tại (backend)
 COPY pom.xml .
+# Copy thư mục src từ thư mục hiện tại (backend)
 COPY src ./src
-# Chạy build Maven trực tiếp tại /app
+# Chạy build Maven
 RUN mvn clean package -DskipTests
 
 FROM eclipse-temurin:17-jre-jammy
