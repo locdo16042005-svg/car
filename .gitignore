@@ -1,0 +1,25 @@
+# Java / Maven
+backend/target/
+backend/.settings/
+backend/.classpath
+backend/.project
+backend/.factorypath
+backend/.jqwik-database
+backend/uploads/
+*.class
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/*.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.DS_Store
+
+# Temporary files
+temp/
+tmp/
